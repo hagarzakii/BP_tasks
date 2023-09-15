@@ -54,7 +54,7 @@ void main()
 			printf("top of stack is %d\n" , item);
 		break;
         case 5:		
-			size = stackSize(&item , &s);
+			size = stackSize(&s);
 			printf("size of stack is %d\n",size);
 		break;
         case 6:		

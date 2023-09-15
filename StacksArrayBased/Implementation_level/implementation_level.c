@@ -52,7 +52,7 @@ void stackTop(stackEntry *pitem , Stack *ps)
 	*pitem = ps->entry[ps->top -1];
 }
 
-int stackSize(stackEntry *pitem , Stack *ps)
+int stackSize(Stack *ps)
 {
 	return ps->top ;
 }
