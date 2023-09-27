@@ -18,13 +18,19 @@ int stackEmpty(Stack *ps)
 	return ps->top == NULL;
 }
 
-void push(stackEntry item , Stack *ps)
+int push(stackEntry item , Stack *ps)
 {
 	stackNode *pn = (stackNode*) malloc(sizeof(stackNode));
+	if(!pn)
+	{
+		return 0;
+	}else{
 	pn->entry = item;
 	pn->next = ps->top;
 	ps->top = pn;
 	ps->size ++;
+	return 1;
+	}
 }
 
 void pop(stackEntry *pitem , Stack *ps)

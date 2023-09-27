@@ -29,7 +29,10 @@ void main()
 	    scanf("%d" ,& item);
 			if(!stackFull(&s))
 				{
-					push(item , &s);
+					if(!push(item , &s))
+					{
+						printf("error");
+					}
 				}
 			else
             {

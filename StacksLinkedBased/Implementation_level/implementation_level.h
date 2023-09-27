@@ -13,7 +13,7 @@ typedef struct stack {
 void createStack(Stack *ps);
 int stackFull(Stack *ps);
 int stackEmpty(Stack *ps);
-void push(stackEntry item , Stack *ps);
+int push(stackEntry item , Stack *ps);
 void pop(stackEntry *pitem , Stack *ps);
 void clearStack(Stack *ps);
 void stackTop(stackEntry *pitem , Stack *ps);
