@@ -84,7 +84,7 @@ void destroyList(List *pl)
 	pl->size = 0;
 }
 
-void retrieveList(int p ,listEntry *pitem , List *pl)
+void retrieveList(int pos ,listEntry *pitem , List *pl)
 {
 	ListNode *q ;
 	q = pl->head;
@@ -100,7 +100,7 @@ int listSize(List *pl)
 	return pl->size ;
 }
 
-void replaceList(int p ,listEntry item , List *pl)
+void replaceList(int pos ,listEntry item , List *pl)
 {
 	ListNode *q ;
 	q = pl->head;
