@@ -22,7 +22,8 @@ void main()
 	"4-Find an item  with its position \n"
 	"5-Size of queue \n"
 	"6-Clear queue \n"
-	"7-Replace an element \n");
+	"7-Replace an element \n"
+	"8-Exit \n");
 	scanf("%d",& task);
 	switch(task){
 		case 1 :
@@ -30,7 +31,8 @@ void main()
 	    scanf("%d" ,& item);
 			if(!listFull(&l))
 				{
-					insertList(item ,&l);
+					size = listSize(&l);
+					insertList(size,item ,&l);
 				}
 			else
             {
@@ -40,7 +42,7 @@ void main()
 		case 2 :
 			if(!listEmpty(&l))
 				{
-					deleteList(&item , &l);
+					deleteList(0,&item , &l);
 				}
 			else
             {
